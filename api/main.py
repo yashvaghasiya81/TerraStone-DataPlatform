@@ -4,7 +4,7 @@
 # DESCRIPTION: Fake Online Sales API using FastAPI
 # AUTHOR     : TerraStone Team
 # DATE       : 2026-03-25
-# VERSION    : 1.1 — Added /customers, /orders/{id}/items, /suppliers
+# VERSION    : 1.2 — Added /invoices, /invoices/{invoice_id}
 # NOTE       : Data intentionally contains dirty/messy records
 #              for Silver layer cleaning practice
 # ============================================================
@@ -15,7 +15,7 @@ from typing import Optional
 app = FastAPI(
     title="TerraStone Online Sales API",
     description="Fake API simulating international online sales for TerraStone marble and tile operations",
-    version="1.1.0"
+    version="1.2.0"
 )
 
 # ============================================================
@@ -160,6 +160,35 @@ online_suppliers = [
 ]
 
 # ============================================================
+# ONLINE INVOICES DATA — dirty and messy intentionally
+# Issues: duplicates, nulls, negative amounts, wrong date formats,
+#         inconsistent casing, junk customer_id, mixed tax_type values
+# ============================================================
+online_invoices = [
+    {"invoice_id": "INV-1001", "order_id": "ORD-1001", "customer_id": "CUST-01", "country": "USA",          "tax_type": "Sales Tax",       "tax_rate": 0.08, "gross_amount": 2700.00, "tax_amount": 200.00, "net_amount": 2500.00, "currency": "USD", "invoice_date": "2026-01-15", "payment_status": "Paid"},
+    {"invoice_id": "INV-1002", "order_id": "ORD-1002", "customer_id": "CUST-02", "country": "Italy",        "tax_type": "VAT",             "tax_rate": 0.22, "gross_amount": 1098.61, "tax_amount": 198.11, "net_amount": 900.50, "currency": "EUR", "invoice_date": "2026-01-16", "payment_status": "Paid"},
+    {"invoice_id": "INV-1003", "order_id": "ORD-1003", "customer_id": None,       "country": "UK",           "tax_type": "VAT",             "tax_rate": 0.20, "gross_amount": None,    "tax_amount": None,   "net_amount": None,   "currency": "GBP", "invoice_date": "2026-01-17", "payment_status": "Pending"},
+    {"invoice_id": "INV-1004", "order_id": "ORD-1004", "customer_id": "CUST-04", "country": "usa",          "tax_type": "sales tax",       "tax_rate": 0.08, "gross_amount": -810.00, "tax_amount": -60.00, "net_amount": -750.00,"currency": "usd", "invoice_date": "18-01-2026", "payment_status": "paid"},
+    {"invoice_id": "INV-1005", "order_id": "ORD-1005", "customer_id": "CUST-05", "country": "UAE",          "tax_type": "VAT",             "tax_rate": 0.05, "gross_amount": 3360.00, "tax_amount": 160.00, "net_amount": 3200.00,"currency": "AED", "invoice_date": "2026-01-17", "payment_status": "Paid"},
+    {"invoice_id": "INV-1006", "order_id": "ORD-1006", "customer_id": "CUST-06", "country": "india",        "tax_type": "GST",             "tax_rate": 0.18, "gross_amount": 1699.20, "tax_amount": 259.20, "net_amount": 1440.00,"currency": "INR", "invoice_date": "2026/01/19", "payment_status": "PAID"},
+    {"invoice_id": "INV-1002", "order_id": "ORD-1002", "customer_id": "CUST-02", "country": "Italy",        "tax_type": "VAT",             "tax_rate": 0.22, "gross_amount": 1098.61, "tax_amount": 198.11, "net_amount": 900.50, "currency": "EUR", "invoice_date": "2026-01-16", "payment_status": "Paid"},
+    {"invoice_id": "INV-1007", "order_id": "ORD-1007", "customer_id": "CUST-07", "country": "Japan",        "tax_type": "Consumption Tax", "tax_rate": 0.10, "gross_amount": 5280.00, "tax_amount": 480.00, "net_amount": 4800.00,"currency": "JPY", "invoice_date": "2026-01-20", "payment_status": "Pending"},
+    {"invoice_id": "INV-1008", "order_id": "ORD-1008", "customer_id": "N/A",     "country": "Australia",    "tax_type": "GST",             "tax_rate": 0.10, "gross_amount": 572.00,  "tax_amount": 52.00,  "net_amount": 520.00, "currency": "AUD", "invoice_date": "2026-01-21", "payment_status": "Paid"},
+    {"invoice_id": "INV-1009", "order_id": "ORD-1009", "customer_id": "CUST-09", "country": None,           "tax_type": None,              "tax_rate": None, "gross_amount": None,    "tax_amount": None,   "net_amount": None,   "currency": None,  "invoice_date": None,         "payment_status": None},
+    {"invoice_id": "INV-1010", "order_id": "ORD-1010", "customer_id": "CUST-10", "country": "Saudi Arabia", "tax_type": "VAT",             "tax_rate": 0.15, "gross_amount": 3312.00, "tax_amount": 432.00, "net_amount": 2880.00,"currency": "SAR", "invoice_date": "2026-01-23", "payment_status": "Paid"},
+    {"invoice_id": "INV-1011", "order_id": "ORD-1011", "customer_id": "CUST-11", "country": "Canada",       "tax_type": "GST",             "tax_rate": 0.05, "gross_amount": 1837.50, "tax_amount": 87.50,  "net_amount": 1750.00,"currency": "USD", "invoice_date": "2026-01-24", "payment_status": "PENDING"},
+    {"invoice_id": "INV-1012", "order_id": "ORD-1012", "customer_id": "CUST-12", "country": "CHINA",        "tax_type": "N/A",             "tax_rate": 0.00, "gross_amount": 2250.00, "tax_amount": 0.00,   "net_amount": 2250.00,"currency": "CNY", "invoice_date": "2026-01-25", "payment_status": "paid"},
+    {"invoice_id": "INV-1013", "order_id": "ORD-1013", "customer_id": "CUST-13", "country": "Singapore",    "tax_type": "GST",             "tax_rate": 0.09, "gross_amount": 752.10,  "tax_amount": 62.10,  "net_amount": 690.00, "currency": "SGD", "invoice_date": "2026-01-26", "payment_status": "Paid"},
+    {"invoice_id": "INV-1014", "order_id": "ORD-1014", "customer_id": "CUST-14", "country": "Germany",      "tax_type": "VAT",             "tax_rate": 0.19, "gross_amount": 2356.20, "tax_amount": 376.20, "net_amount": 1980.00,"currency": "EUR", "invoice_date": "2026-01-27", "payment_status": "Pending"},
+    {"invoice_id": "INV-1015", "order_id": "ORD-1015", "customer_id": "CUST-15", "country": "UK",           "tax_type": "VAT",             "tax_rate": 0.20, "gross_amount": 1350.00, "tax_amount": 225.00, "net_amount": 1125.00,"currency": "GBP", "invoice_date": "2026-01-28", "payment_status": "overdue"},
+    {"invoice_id": "INV-1016", "order_id": "ORD-1016", "customer_id": "not available", "country": "USA",    "tax_type": "Sales Tax",       "tax_rate": 0.07, "gross_amount": 1027.20, "tax_amount": 67.20,  "net_amount": 960.00, "currency": "USD", "invoice_date": "2026-01-29", "payment_status": "Paid"},
+    {"invoice_id": "INV-1017", "order_id": "ORD-1017", "customer_id": "CUST-17", "country": "France",       "tax_type": "VAT",             "tax_rate": 0.20, "gross_amount": -576.00, "tax_amount": -96.00, "net_amount": -480.00,"currency": "EUR", "invoice_date": "2026-01-30", "payment_status": "Paid"},
+    {"invoice_id": "INV-1018", "order_id": "ORD-1018", "customer_id": "CUST-18", "country": "india",        "tax_type": "GST",             "tax_rate": 0.18, "gross_amount": 3964.80, "tax_amount": 604.80, "net_amount": 3360.00,"currency": "inr", "invoice_date": "31-01-2026", "payment_status": "PAID"},
+    {"invoice_id": "INV-1019", "order_id": "ORD-1019", "customer_id": "CUST-19", "country": "Japan",        "tax_type": "Consumption Tax", "tax_rate": 0.10, "gross_amount": 1584.00, "tax_amount": 144.00, "net_amount": 1440.00,"currency": "JPY", "invoice_date": "2026-02-01", "payment_status": "Pending"},
+    {"invoice_id": "INV-1020", "order_id": "ORD-1020", "customer_id": "CUST-20", "country": "UAE",          "tax_type": "VAT",             "tax_rate": 0.05, "gross_amount": 2310.00, "tax_amount": 110.00, "net_amount": 2200.00,"currency": "AED", "invoice_date": "2026-02-02", "payment_status": "paid"},
+]
+
+# ============================================================
 # API ENDPOINTS
 # ============================================================
 
@@ -168,7 +197,7 @@ def root():
     return {
         "project": "TerraStone Data Platform",
         "api": "Online Sales API",
-        "version": "1.1.0",
+        "version": "1.2.0",
         "endpoints": [
             "/orders",
             "/orders/{order_id}",
@@ -179,13 +208,15 @@ def root():
             "/products/{sku_id}",
             "/suppliers",
             "/suppliers/{supplier_id}",
+            "/invoices",
+            "/invoices/{invoice_id}",
             "/health"
         ]
     }
 
 @app.get("/health")
 def health():
-    return {"status": "healthy", "api": "TerraStone Online Sales API", "version": "1.1.0"}
+    return {"status": "healthy", "api": "TerraStone Online Sales API", "version": "1.2.0"}
 
 # ── ORDERS ──────────────────────────────────────────────────
 
@@ -284,3 +315,25 @@ def get_supplier(supplier_id: str):
     if not supplier:
         return {"error": f"Supplier {supplier_id} not found"}
     return supplier
+
+# ── INVOICES ────────────────────────────────────────────────
+
+@app.get("/invoices")
+def get_invoices(country: Optional[str] = None, payment_status: Optional[str] = None):
+    data = online_invoices
+    if country:
+        data = [i for i in data if i["country"] and i["country"].lower() == country.lower()]
+    if payment_status:
+        data = [i for i in data if i["payment_status"] and i["payment_status"].lower() == payment_status.lower()]
+    return {
+        "total_records": len(data),
+        "source": "TerraStone Online Customer Invoices",
+        "data": data
+    }
+
+@app.get("/invoices/{invoice_id}")
+def get_invoice(invoice_id: str):
+    invoice = next((i for i in online_invoices if i["invoice_id"] == invoice_id), None)
+    if not invoice:
+        return {"error": f"Invoice {invoice_id} not found"}
+    return invoice
