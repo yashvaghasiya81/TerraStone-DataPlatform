@@ -1,0 +1,15 @@
+currency,supplier_id,supplier_name,country,contact_email,modify_date
+EUR,1,Marble World Italy,Italy,contact@marbleworld.it,2026-04-07 14:54:20.378000000
+INR,2,Stone Masters India,India,info@stonemasters.in,2026-04-07 14:54:20.383000000
+AED,3,Gulf Granite LLC,UAE,sales@gulfgranite.ae,2026-04-07 14:54:20.383000000
+USD,4,Global Tiles Co,China,N/A,2026-04-07 14:54:20.383000000
+USD,5,Global Tiles Co,China,N/A,2026-04-07 14:54:20.383000000
+GBP,6,Premium Stone UK,UK,,2026-04-07 14:54:20.383000000
+USD,7,Elite Marble Turkey,Turkey,info@elitemarble.tr,2026-04-07 14:54:20.383000000
+CNY,8,Asia Stone Co,China,N/A,2026-04-07 14:54:20.383000000
+EUR,9,Mediterranean Marble,Greece,contact@medmarble.gr,2026-04-07 14:54:20.383000000
+cny,10,ASIA STONE CO,china,N/A,2026-04-07 14:54:20.383000000
+SAR,11,Saudi Stone Works,Saudi Arabia,,2026-04-07 14:54:20.383000000
+USD,12,North American Tiles,USA,sales@natiles.com,2026-04-07 14:54:20.383000000
+AUD,13,Aussie Granite Co,Australia,info@aussiegranite.au,2026-04-07 14:54:20.383000000
+,14,not available,,,2026-04-07 14:54:20.383000000

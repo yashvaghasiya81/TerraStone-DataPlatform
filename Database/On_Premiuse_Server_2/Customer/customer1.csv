@@ -1,0 +1,21 @@
+customer_id,customer_name,customer_type,city,country,phone,email,modify_date
+1,Michael Brown,B2C,New York,USA,+12025550123,mike@email.com,2026-04-07 13:47:18.522000000
+2,michael brown,b2c,Los Angeles,USA,2025550123,,2026-04-07 13:47:18.523000000
+3,Alpha Traders,B2B,Chicago,USA,000000,alpha@trade.com,2026-04-07 13:47:18.523000000
+4,lucy fernandez,B2C,Houston,USA,N/A,lucy@email.es,2026-04-07 13:47:18.523000000
+5,Khalid Al Noor,B2B,,USA,+971500000000,,2026-04-07 13:47:18.523000000
+6,unknown,,,USA,,,2026-04-07 13:47:18.523000000
+7,Global Stone Ltd,B2B,Phoenix,USA,+441234567890,info@globalstone.com,2026-04-07 13:47:18.523000000
+8,Fahad Al Saud,B2B,Philadelphia,USA,+966500000001,fahad@email.sa,2026-04-07 13:47:18.523000000
+9,fahad al saud,b2b,San Antonio,USA,966500000001,fahad@email.sa,2026-04-07 13:47:18.523000000
+10,Hiroshi Sato,B2C,San Diego,USA,+819000000000,hiro@email.jp,2026-04-07 13:47:18.523000000
+11,Emma Wilson,B2C,Dallas,USA,N/A,emma@email.uk,2026-04-07 13:47:18.523000000
+12,Interior Designs AG,B2B,San Jose,USA,+491700000000,contact@interior.de,2026-04-07 13:47:18.523000000
+13,juan carlos,b2c,Austin,USA,000000,,2026-04-07 13:47:18.523000000
+14,Asia Builders Pvt,B2B,Jacksonville,USA,+6588888888,build@asia.sg,2026-04-07 13:47:18.523000000
+15,N/A,,,USA,,,2026-04-07 13:47:18.523000000
+16,Sophie Muller,B2C,Fort Worth,USA,+491511111111,sophie@email.de,2026-04-07 13:47:18.523000000
+17,Beta Constructions,B2B,Columbus,USA,000000,beta@construct.com,2026-04-07 13:47:18.523000000
+18,  David Miller   ,B2C,  Charlotte   ,USA,+13035550111,david@email.com,2026-04-07 13:47:18.523000000
+19,Zhang Wei,B2B,San Francisco,USA,+8613900000000,zhang@china.cn,2026-04-07 13:47:18.523000000
+20,Giulia Romano,B2C,Indianapolis,USA,not available,giulia@email.it,2026-04-07 13:47:18.523000000

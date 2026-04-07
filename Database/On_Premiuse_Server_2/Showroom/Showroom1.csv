@@ -1,0 +1,15 @@
+showroom_id,showroom_name,city,country,region,opening_date,modify_date
+1,TerraStone New York,New York,USA,East,2018-05-10,2026-04-07 14:03:08.634000000
+2,TerraStone Los Angeles,Los Angeles,USA,West,2019-03-15,2026-04-07 14:03:08.634000000
+3,terrastone chicago,chicago,USA,Midwest,2020-07-01,2026-04-07 14:03:08.634000000
+4,TERRASTONE HOUSTON,HOUSTON,USA,South,2017-11-20,2026-04-07 14:03:08.634000000
+5,TerraStone Phoenix,,USA,West,,2026-04-07 14:03:08.634000000
+6,TerraStone Phoenix,,USA,West,,2026-04-07 14:03:08.634000000
+7,TerraStone Philadelphia,Philadelphia,USA,East,2021-02-10,2026-04-07 14:03:08.634000000
+8,terrastone san antonio,san antonio,USA,South,2022-06-15,2026-04-07 14:03:08.634000000
+9,TerraStone San Diego,San Diego,USA,West,2023-01-20,2026-04-07 14:03:08.634000000
+10,TERRASTONE DALLAS,DALLAS,USA,South,2020-09-10,2026-04-07 14:03:08.634000000
+11,TerraStone San Jose,,USA,West,2019-04-05,2026-04-07 14:03:08.634000000
+12,TerraStone San Jose,,USA,West,2019-04-05,2026-04-07 14:03:08.634000000
+13,terrastone austin,austin,USA,,2021-08-30,2026-04-07 14:03:08.634000000
+14,TerraStone Jacksonville,Jacksonville,USA,South,,2026-04-07 14:03:08.634000000

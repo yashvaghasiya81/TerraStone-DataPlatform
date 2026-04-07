@@ -1,0 +1,14 @@
+country,warehouse_id,warehouse_name,city,capacity_sqft,modify_date
+UAE,1,Dubai Warehouse,Dubai,50000.00,2026-04-07 14:58:34.649000000
+india,2,Mumbai Warehouse,mumbai,35000.00,2026-04-07 14:58:34.649000000
+Italy,3,Milan Warehouse,Milan,42000.00,2026-04-07 14:58:34.649000000
+UK,4,London Warehouse,London,,2026-04-07 14:58:34.649000000
+UAE,5,Dubai Warehouse,Dubai,50000.00,2026-04-07 14:58:34.649000000
+Saudi Arabia,6,Riyadh Warehouse,Riyadh,30000.00,2026-04-07 14:58:34.649000000
+Japan,7,Tokyo Warehouse,Tokyo,25000.00,2026-04-07 14:58:34.649000000
+australia,8,Sydney Warehouse,sydney,28000.00,2026-04-07 14:58:34.649000000
+Germany,9,Berlin Warehouse,Berlin,,2026-04-07 14:58:34.649000000
+canada,10,Toronto Warehouse,toronto,32000.00,2026-04-07 14:58:34.649000000
+Singapore,11,Singapore Warehouse,Singapore,40000.00,2026-04-07 14:58:34.649000000
+USA,12,New York Warehouse,New York,55000.00,2026-04-07 14:58:34.649000000
+UAE,5,Dubai Warehouse,Dubai,50000.00,2026-04-07 14:58:34.649000000

@@ -1,0 +1,21 @@
+customer_id,customer_name,customer_type,city,country,phone,email,modify_date
+1,Rahul Sharma,B2C,Mumbai,india,+919876543210,rahul@email.com,2026-04-07 12:19:02.808000000
+2,RAHUL SHARMA,b2c,delhi,india,9876543210,rahul@email.com,2026-04-07 12:19:02.808000000
+3,Raj Constructions,B2B,Ahmedabad,india,000000,raj@constructions.in,2026-04-07 12:19:02.808000000
+4,priya patel,B2C,Surat,india,N/A,priya@email.in,2026-04-07 12:19:02.808000000
+5,Amit Khan,B2B,,india,+919812345678,,2026-04-07 12:19:02.808000000
+6,not available,,,india,,,2026-04-07 12:19:02.808000000
+7,TerraStone Delhi Ltd,B2B,Delhi,india,+919811112222,delhi@terrastone.com,2026-04-07 12:19:02.808000000
+8,Mohammed Shaikh,B2B,Hyderabad,india,+919900112233,mohammed@alrashid.sa,2026-04-07 12:19:02.808000000
+9,MOHAMMED SHAIKH,b2b,hyderabad,india,9900112233,mohammed@alrashid.sa,2026-04-07 12:19:02.808000000
+10,Yash Patel,B2C,Pune,india,+918888777766,yash@email.in,2026-04-07 12:19:02.808000000
+11,Neha Verma,B2C,Bangalore,india,N/A,neha@email.in,2026-04-07 12:19:02.808000000
+12,Berlin Interiors GmbH,B2B,Chennai,india,+919822334455,info@berlininteriors.de,2026-04-07 12:19:02.808000000
+13,carlos mendez,b2c,Kolkata,india,000000,,2026-04-07 12:19:02.808000000
+14,Singapore Developers Pte,B2B,Jaipur,india,+919933445566,dev@sgdevelop.sg,2026-04-07 12:19:02.808000000
+15,N/A,,,india,,,2026-04-07 12:19:02.808000000
+16,Ankit Gupta,B2C,Delhi,india,+919955667788,ankit@email.in,2026-04-07 12:19:02.808000000
+17,Raj Constructions,B2B,Ahmedabad,india,000000,raj@constructions.in,2026-04-07 12:19:02.808000000
+18,  Rohit Mehta   ,B2C,  Mumbai   ,india,+919876543210,rohit@email.in,2026-04-07 12:19:02.808000000
+19,Liu Wei,B2B,Noida,india,+919811223344,liu@weigroup.cn,2026-04-07 12:19:02.808000000
+20,Isabella Ferrari,B2C,Goa,india,not available,isabella@email.it,2026-04-07 12:19:02.808000000

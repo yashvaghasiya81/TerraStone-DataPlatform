@@ -1,0 +1,15 @@
+city,country,showroom_id,showroom_name,region,opening_date,modify_date
+Mumbai,india,1,TerraStone Mumbai,West,2018-05-10,2026-04-07 12:24:33.676000000
+Delhi,india,2,TerraStone Delhi,North,2019-03-15,2026-04-07 12:24:33.676000000
+ahmedabad,india,3,terrastone ahmedabad,West,2020-07-01,2026-04-07 12:24:33.676000000
+BANGALORE,india,4,TERRASTONE BANGALORE,South,2017-11-20,2026-04-07 12:24:33.676000000
+,india,5,TerraStone Chennai,South,,2026-04-07 12:24:33.676000000
+,india,6,TerraStone Chennai,South,,2026-04-07 12:24:33.676000000
+Hyderabad,india,7,TerraStone Hyderabad,South,2021-02-10,2026-04-07 12:24:33.676000000
+pune,india,8,terrastone pune,West,2022-06-15,2026-04-07 12:24:33.676000000
+Kolkata,india,9,TerraStone Kolkata,East,2023-01-20,2026-04-07 12:24:33.676000000
+JAIPUR,india,10,TERRASTONE JAIPUR,North,2020-09-10,2026-04-07 12:24:33.676000000
+,india,11,TerraStone Surat,West,2019-04-05,2026-04-07 12:24:33.676000000
+,india,12,TerraStone Surat,West,2019-04-05,2026-04-07 12:24:33.676000000
+lucknow,india,13,terrastone lucknow,,2021-08-30,2026-04-07 12:24:33.676000000
+Ahmedabad,india,14,TerraStone Ahmedabad,West,,2026-04-07 12:24:33.676000000

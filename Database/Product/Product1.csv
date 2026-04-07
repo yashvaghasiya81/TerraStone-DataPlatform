@@ -1,0 +1,21 @@
+product_id,product_name,category,sub_category,unit_price,currency,origin_country,supplier_id,modify_date
+1,Carrara White Marble,Marble,Floor,250.00,USD,Italy,1,2026-04-07 14:18:48.695000000
+2,Black Galaxy Granite,granite,wall,180.50,usd,India,2,2026-04-07 14:18:48.704000000
+3,Travertine Classic,Marble,Floor,,EUR,Turkey,1,2026-04-07 14:18:48.704000000
+4,Desert Gold Marble,MARBLE,FLOOR,-500.00,AED,UAE,3,2026-04-07 14:18:48.704000000
+5,Ceramic Floor Tile,Tile,Floor,45.00,USD,China,4,2026-04-07 14:18:48.704000000
+6,Ceramic Floor Tile,Tile,Floor,45.00,USD,China,4,2026-04-07 14:18:48.704000000
+7,Porcelain Wall Tile,Tile,Wall,60.00,GBP,UK,6,2026-04-07 14:18:48.704000000
+8,Unknown Product,,,,,,,2026-04-07 14:18:48.704000000
+9,Emperador Dark Marble,Marble,Floor,320.00,EUR,Spain,9,2026-04-07 14:18:48.704000000
+10,EMPERADOR DARK MARBLE,marble,floor,320.00,eur,spain,9,2026-04-07 14:18:48.704000000
+11,Onyx Green Marble,Marble,Wall,450.00,USD,Turkey,7,2026-04-07 14:18:48.704000000
+12,Sandstone Beige,Stone,Outdoor,95.00,AUD,Australia,13,2026-04-07 14:18:48.704000000
+13,Mosaic Glass Tile,Tile,Wall,120.00,USD,China,8,2026-04-07 14:18:48.704000000
+14,Limestone Classic,Stone,Floor,,SAR,Saudi Arabia,11,2026-04-07 14:18:48.704000000
+15,Norwegian Slate,Stone,Outdoor,-200.00,USD,Norway,,2026-04-07 14:18:48.704000000
+16,Italian Statuario,Marble,Floor,580.00,EUR,Italy,1,2026-04-07 14:18:48.704000000
+17,unknown,,,,,,,2026-04-07 14:18:48.704000000
+18,Calacatta Gold Marble,Marble,Floor,750.00,USD,Italy,1,2026-04-07 14:18:48.704000000
+19,CALACATTA GOLD MARBLE,MARBLE,FLOOR,750.00,usd,ITALY,1,2026-04-07 14:18:48.704000000
+20,Basalt Black Stone,Stone,Outdoor,110.00,CNY,China,8,2026-04-07 14:18:48.704000000
